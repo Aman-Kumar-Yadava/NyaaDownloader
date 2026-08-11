@@ -1,2 +1,14 @@
-# NyaaDownloader
-A robust, asynchronous terminal torrent client for Android &amp; Termux that pairs a Python TUI and search cache with a persistent aria2c background daemon.
+┌────────────────────────────────────────────────────────┐
+│                   Python TUI (Rich)                    │
+│  - Search & Pagination     - Background Prefetch       │
+│  - Thread-Safe Cache       - Retry & Exponential Backoff │
+└──────────────────────────┬─────────────────────────────┘
+                           │
+                     XML-RPC (Secure Token)
+                           │
+                           ▼
+┌────────────────────────────────────────────────────────┐
+│                 aria2c Daemon (Background)             │
+│  - BitTorrent Engine       - DHT / PEX / LPD           │
+│  - Integrity Validation    - Session State Persistence │
+└────────────────────────────────────────────────────────┘
